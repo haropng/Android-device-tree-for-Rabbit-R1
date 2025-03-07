@@ -27,3 +27,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vnd_r1-user 12 SP1A.210812.016 619 release-keys"
 
 BUILD_FINGERPRINT := Rabbit/vnd_r1/r1:12/SP1A.210812.016/20241119184237:user/release-keys
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/pb/config/common.mk)
